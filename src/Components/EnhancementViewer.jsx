@@ -12,7 +12,7 @@ function cleanResumeText(input) {
     // Remove '===' and similar lines
     .replace(/^={2,}\s?/gm, "")
     // Remove bullets and asterisks at line starts
-    .replace(/^\s*[\*\-\+]\s?/gm, "")
+    .replace(/^\s*[-*+]\s?/gm, "")
     // Remove Markdown emphasis (bold/italics)
     .replace(/\*\*/g, "")
     .replace(/\*/g, "")
